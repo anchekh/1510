@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> wow </title>
+    <style>
+        *
+        {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body 
+        {
+            background-color: rgb(255, 204, 0);
+        }
+        .container
+        {
+            background: rgb(238,174,202);
+            background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+        }
+        .navigation
+        {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            background-color: chartreuse;
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            right: 20px;
+            z-index: 2;
+        }
+        .navigation_item
+        {
+            border-bottom: 2px solid #000;
+            cursor: pointer;
+            height: 100%;
+        }
+        .navigation_item:hover
+        {
+            color: rgb(255, 255, 255);
+        }
+        .navigation_item_outlined
+        {
+            border: 2px solid #000;
+            border-radius: 12px;
+            padding: 6px;
+        }
+        .popup
+        {
+            max-width: 600px;
+            min-width: 400px;
+            max-height: 800px;
+            min-height: 600px;
+            border: 5px dashed #000;
+            background-color: aquamarine;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+        }
+        .space
+        {
+            height: 300vh;
+        }
+        .cards
+        {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            align-items: center;
+            position: sticky;
+            top: 120px;
+        }
+        .cards_element
+        {
+            border: 6px solid #000;
+            border-radius: 12px;
+            font-size: 48px;
+            width: 200px;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div class = "container">
+        <div class = "navigation">
+            <div class = "navigation_item"> Menu </div>
+            <div class = "navigation_item"> About </div>
+            <div class = "navigation_item"> Sign in </div>
+            <div class = "navigation_item navigation_item_outlined"> Sign up </div>
+        </div>
+        <div class = "popup">
+            <div class = "popup_content">
+                <div class = "popup_content-title">
+                    Добро пожаловать
+                </div>
+                <div class = "popup_content-subtitle">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum esse cumque tempore! Quam saepe sequi, quo modi quaerat provident, nobis cupiditate ut ullam eveniet repudiandae adipisci porro dicta tenetur deleniti.
+                </div>
+            </div>
+        </div>
+        <div class = "space"></div>
+        <div class = "cards">
+            <div class = "cards_element">
+                <div class = "cards_element-title"> 1 </div>
+            </div>
+            <div class = "cards_element">
+                <div class = "cards_element-title"> 2 </div>
+            </div>
+            <div class = "cards_element">
+                <div class = "cards_element-title"> 3 </div>
+            </div>
+            <div class = "cards_element">
+                <div class = "cards_element-title"> 4 </div>
+            </div>
+        </div>
+        <div class = "space"></div>
+    </div>
+</body>
+</html>
